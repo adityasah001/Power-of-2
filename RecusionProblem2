@@ -1,0 +1,12 @@
+class Solution {
+public:
+    bool isPowerOfTwo(int n) {
+        for(int Power=1;Power>0;Power=Power<<1){
+            if(Power==n)
+                return true;
+            if(Power>n)
+                return false;
+        }
+        return false;
+    }
+};
